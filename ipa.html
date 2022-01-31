@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ölsorter | Ipa</title>
+<link href="ipa.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+	<!-- kontainer för hemsidan -->
+	<div class="container">
+		<!-- meny --> 
+		<header id="navbar">
+		  <a href="index.html" class="logo animate__animated animate__backInDown">ÖL<span>Sorter</span></a>
+			<ul>
+				<li><a href="index.html">Hem</a></li>
+				<li><a href="lager.html">Lager</a></li>
+				<li><a href="ipa.html" class="active">Ipa</a></li>
+				<li><a href="stout.html">Stout</a></li>
+			</ul>
+			<!-- Menyicon för mobilversionen som tar fram en meny när den klickas på -->
+			<span class="menuIcon" onClick="menuToggle();"></span>
+		</header>
+		<!-- wrapper för hemsidans innehåll -->
+		<div class="content">
+		  <div class="bannerText" id="slideshowText">
+			  <!-- Texten som visas först på sidan -->
+			<div class="active">
+			  <h2 class="animate__animated animate__fadeIn">Brooklyn Ipa</h2>
+				<p class="animate__animated animate__fadeIn">Brooklyn Brewery började med en dröm att återvända bryggningen till Brooklyn, en gång ett kraftpaket för amerikansk ölproduktion. Idag reser våra öl till mer än halva USA och över trettio länder. Vår James Beard-belönade bryggmästare Garrett Oliver och hans team brygger allt från klassiska stilar till djärva experiment och samarbetar med bryggare, innovatörer och artister från hela världen.</p>
+				<a href="https://brooklynbrewery.com/" target="_blank">Hemsida</a>
+			  </div>
+			  <div>
+				  <!-- Text som tas fram om man trycker på pilarna -->
+			  <h2 class="animate__animated animate__fadeIn">Ship Full of Ipa</h2>
+				<p class="animate__animated animate__fadeIn">"A Ship Full of IPA” är Brutal Brewings 0%-version av dess fullstyrka namne India pale ale. Få smakanteckningar och information om återförsäljare, kalorier, ingredienser, kolhydrater och socker. En av nyckelfaktorerna till framväxten av hantverksöl – åtminstone i dess tidiga dagar – var att bryggarna hade fria tyglar. Till skillnad från stora bryggerier, som ofta hade aktieägare eller investerare att svara på och balansräkningar till.</p>
+				<a href="https://untappd.com/b/brutal-brewing-a-ship-full-of-ipa/967627" target="_blank">Hemsida</a>
+			  </div>
+			  <div>
+			  <h2 class="animate__animated animate__fadeIn">Lagunitas Ipa</h2>
+				<p class="animate__animated animate__fadeIn">Bryggeriet grundades 1993 av Tony Magee i Lagunitas, Kalifornien, och flyttade ett år senare till närliggande Petaluma, Kalifornien, eftersom de hade vuxit ur sin ursprungliga, lantliga West Marin-läge. Sedan mitten av 2000-talet har Lagunitas varit ett av de snabbast växande hantverksbryggerierna i USA, och ökat från 27 000 fat 2004 till 106 000 fat 2010. I mars 2011 hade företaget 92 anställda med distribution i 32 stater.</p>
+				<a href="https://lagunitas.com/beer/ipa/" target="_blank">Hemsida</a>
+			  </div>
+			</div>
+			<!-- Bilder på ölen som kan läsas om på sidan -->
+			<div class="bannerImg" id="slideshow">
+			  <img src="brooklynipa.png" class="active">
+			  <img src="shipofipa.png">
+			  <img src="lagunitas.png">
+			</div>
+		</div>
+		<div class="icons">
+			<!-- Pilar som används för att navigera mellan texterna på sidan samt bilder -->
+			<ul class="controls">
+				<li><a class="fa fa-arrow-left" onClick="prevSlide();prevSlideText();"></a></li>
+				<li><a class="fa fa-arrow-right" onClick="nextSlide();nextSlideText();"></a></li>
+			</ul>
+		</div>
+	</div>
+		<!-- Samma javascript som hem -->
+	<script src="hem.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ölsorter | Stout</title>
+<link href="stout.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+	<!-- kontainer för hemsidan -->
+	<div class="container">
+		<!-- meny --> 
+		<header id="navbar">
+		  <a href="index.html" class="logo animate__animated animate__backInDown">ÖL<span>Sorter</span></a>
+			<ul>
+				<li><a href="index.html">Hem</a></li>
+				<li><a href="lager.html">Lager</a></li>
+				<li><a href="ipa.html">Ipa</a></li>
+				<li><a href="stout.html" class="active">Stout</a></li>
+			</ul>
+			<!-- Menyicon för mobilversionen som tar fram en meny när den klickas på -->
+			<span class="menuIcon" onClick="menuToggle();"></span>
+		</header>
+		<!-- wrapper för hemsidans innehåll -->
+		<div class="content">
+		  <div class="bannerText" id="slideshowText">
+			  <!-- Texten som visas först på sidan -->
+			<div class="active">
+			  <h2 class="animate__animated animate__fadeIn">Guinness</h2>
+				<p class="animate__animated animate__fadeIn">År 1759, vid 34 års ålder, skrev Arthur Guinness på ett hyreskontrakt för St. James´s Gate Brewery, Dublin. Han arrenderade bryggeriet i 9000 år till en årlig hyra på 45 pund. Bryggeriet var bara 4 tunnland stort, nedlagt och hade lite bryggutrustning. Trots detta byggde Arthur snabbt upp en framgångsrik handel och 1769 hade han börjat exportera sin öl till England.</p>
+				<a href="https://www.guinness.com/en-us/" target="_blank">Hemsida</a>
+			  </div>
+			  <div>
+				   <!-- Text som tas fram om man trycker på pilarna -->
+			  <h2 class="animate__animated animate__fadeIn">Milk Stout</h2>
+				<p class="animate__animated animate__fadeIn">Ok, så det kanske inte är den konstigaste ölstilen som finns, men har du verkligen slutat tänka på vad en milk stout är? Har den mjölk i den, eller är den mjölkaktig i konsistensen? Är Guinness en milk stout? När jag tänker efter, vad är det som gör något till en mjölkstark? Erkänn det...Du har druckit dessa öl i flera år och du inser nu att du inte är riktigt säker på vad du dricker. </p>
+				<a href="https://www.castlemilkstout.co.za/agegate?destination=" target="_blank">Hemsida</a>
+			  </div>
+			  <div>
+			  <h2 class="animate__animated animate__fadeIn">Obsidian Stout</h2>
+				<p class="animate__animated animate__fadeIn">Kommer in på nummer 6 på Clean out the Fridge Countdown Part Deux är en annan brygd från Deschutes-teamet: Deschutes Obsidian Stout (för Deschutes historia, se min Black Butte Porter-recension). Denna öl, som så många från Bends första bryggeri, är uppkallad efter ett närliggande landmärke, närmare bestämt Newberry National Volcanic Monument, som ligger 13 miles söder om Bend, som innehåller ett av världens största obsidianflöden (över 700 acres), kallad Big Obsidian Flow.</p>
+				<a href="https://www.deschutesbrewery.com/beer/obsidian-stout/" target="_blank">Hemsida</a>
+			  </div>
+			</div>
+			<!-- Bilder på ölen som kan läsas om på sidan -->
+			<div class="bannerImg" id="slideshow">
+			  <img src="guinnness.png" class="active">
+			  <img src="milkstout.png">
+			  <img src="obsidian.png">
+			</div>
+		</div>
+			<!-- Pilar som används för att navigera mellan texterna på sidan samt bilder -->
+		<div class="icons">
+			<ul class="controls">
+				<li><a class="fa fa-arrow-left" onClick="prevSlide();prevSlideText();"></a></li>
+				<li><a class="fa fa-arrow-right" onClick="nextSlide();nextSlideText();"></a></li>
+			</ul>
+		</div>
+	</div>
+<!-- Samma javascript som hem -->
+	<script src="hem.js"></script>
+</body>
+</html>

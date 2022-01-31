@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ölsorter | Lager</title>
+<link href="lager.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>	
+</head>
+
+<body>
+	<!-- kontainer för hemsidan -->
+	<div class="container">
+		<!-- meny --> 
+		<header id="navbar">
+		  <a href="index.html" class="logo animate__animated animate__backInDown">ÖL<span>Sorter</span></a>
+			<ul>
+				<li><a href="index.html">Hem</a></li>
+				<li><a href="lager.html" class="active">Lager</a></li>
+				<li><a href="ipa.html">Ipa</a></li>
+				<li><a href="stout.html">Stout</a></li>
+			</ul>
+			<!-- Menyicon för mobilversionen som tar fram en meny när den klickas på -->
+			<span class="menuIcon" onClick="menuToggle();"></span>
+		</header>
+		<div class="content">
+			<!-- wrapper för hemsidans innehåll -->
+		  <div class="bannerText" id="slideshowText">
+			  <!-- Texten som visas först på sidan -->
+			<div class="active">
+			  <h2 class="animate__animated animate__fadeIn">Heineken</h2>
+				<p class="animate__animated animate__fadeIn">Historien om Heineken började egentligen den 15 februari 1864, när Gerard Adriaan Heineken tog över Haystack-bryggeriet i Amsterdam. Bara 22 år gammal hade Gerard liten bryggerfarenhet, men han hade gott om mod, självförtroende och entreprenörsanda. Han visste att han skulle behöva ta en stor risk för att lyckas. Han bestämde sig för att bara brygga lager, även om holländarna var mycket bättre på att brygga ale, porter och brown. Det beslutet, som vi nu vet, gav resultat.</p>
+				<a href="https://www.heineken.com/se/sv/agegateway?returnurl=%2f" target="_blank">Hemsida</a>
+			  </div>
+			  <div>
+			 <!-- Text som tas fram om man trycker på pilarna -->
+			  <h2 class="animate__animated animate__fadeIn">San Miguel</h2>
+				<p class="animate__animated animate__fadeIn">Etablerat 1890, La Fabrica de Cerveza de San Miguel, Sydostasiens första bryggeri producerade och buteljerade vad som så småningom skulle bli en av de bästsäljande ölsorterna i regionen. Inom loppet av en generation skulle San Miguel Beer bli en ikon bland öldrickare. Idag är San Miguel Beer – företagets flaggskeppsprodukt – en av de mest sålda ölsorterna och bland de 10 bästa ölmärkena i världen. Medan att brygga öl är företagets arv, grenade San Miguel sedan ut till livsmedels- och förpackningsföretagen.</p>
+				<a href="https://www.sanmiguel.com.ph/" target="_blank">Hemsida</a>
+			  </div>
+			  <div>
+			  <h2 class="animate__animated animate__fadeIn">Carlsberg</h2>
+				<p class="animate__animated animate__fadeIn">Allt börjar med en man som heter Jacob Christian Jacobsen. Efter faderns död 1835 kommer han till bryggare. Hans kärlek och passion för öl ingav honom att lära sig och tillägna sig olika tekniker i bryggprocesserna. År 1847 föddes Carlsberg bryggeri. Den fick sitt namn efter hans förstfödde och etablerades strax utanför Köpenhamn, Danmark. Den första bryggda satsen någonsin registrerades den 10 november 1847, och 1868 exporterade de ett fat till Skottland.</p>
+				<a href="https://www.carlsberggroup.com/" target="_blank">Hemsida</a>
+			  </div>
+			</div>
+			<!-- Bilder på ölen som kan läsas om på sidan -->
+			<div class="bannerImg" id="slideshow">
+			  <img src="heineken.png" class="active">
+			  <img src="sanmiguel.png">
+			  <img src="carlsberg.png">
+			</div>
+		</div>
+		<!-- Pilar som används för att navigera mellan texterna på sidan samt bilder -->
+		<div class="icons">
+			<ul class="controls">
+				<li><a class="fa fa-arrow-left" onClick="prevSlide();prevSlideText();"></a></li>
+				<li><a class="fa fa-arrow-right" onClick="nextSlide();nextSlideText();"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Samma javascript som hem -->
+	<script src="hem.js"></script>
+</body>
+</html>

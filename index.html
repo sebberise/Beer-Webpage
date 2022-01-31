@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ölsorter | Hem</title>
+<link href="text.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="icon" href="lager.png" type="image/icon type">
+</head>
+
+<body>
+	
+	<!-- kontainer för hemsidan -->
+	<div class="container">
+		
+		<!-- meny --> 
+		<header id="navbar">
+		  <a href="index.html" class="logo animate__animated animate__backInDown">ÖL<span>Sorter</span></a>
+			<ul>
+				<li><a href="index.html" class="active">Hem</a></li>
+				<li><a href="lager.html">Lager</a></li>
+				<li><a href="ipa.html">Ipa</a></li>
+				<li><a href="stout.html">Stout</a></li>
+			</ul>
+			<!-- Menyicon för mobilversionen som tar fram en meny när den klickas på -->
+			<span class="menuIcon" onClick="menuToggle();"></span>
+		</header>
+		
+		<!-- wrapper för hemsidans innehåll -->
+		<div class="content">
+		  <div class="bannerText" id="slideshowText">
+			  <!-- Texten som visas först på sidan -->
+			<div class="active">
+			  <h2 class="animate__animated animate__fadeIn">Lager</h2>
+				<p class="animate__animated animate__fadeIn">Lager är öl som har bryggts och konditionerats vid låg temperatur. Lager kan vara bleka, bärnstensfärgade eller mörka. Blek lager är den mest konsumerade och kommersiellt tillgängliga ölstilen. Termen "lager" kommer från tyskans för "lagring", eftersom ölet lagrades innan det drack - traditionellt i samma svala grottor jästes det i.</p>
+				<a href="lager.html">Läs Mer</a>
+			  </div>
+			  <div>
+				  <!-- Text som tas fram om man trycker på pilarna -->
+			  <h2 class="animate__animated animate__fadeIn">Ipa</h2>
+				<p class="animate__animated animate__fadeIn">Pale ales från tidigt 1700-tal var lätt humlad och helt annorlunda än dagens pale ales. Vid mitten av 1700-talet bryggdes pale ale mestadels med kokseldad malt, vilket gav mindre rökning och rostning av korn i mältningsprocessen, och gav därför ett blekare öl. En sådan variation av öl var oktoberöl, en blek välhumlad brygd som var populär bland de landade herrarna, som bryggde det inhemskt; när den väl bryggts var den tänkt att stå i källare två år. </p>
+				<a href="ipa.html">Läs Mer</a>
+			  </div>
+			  <div>
+			  <h2 class="animate__animated animate__fadeIn">Stout</h2>
+				<p class="animate__animated animate__fadeIn">Stout är ett mörkt, överjäst öl med ett antal varianter, inklusive dry stout, oatmeal stout, milk stout och imperial stout. Den första kända användningen av ordet stout för öl, i ett dokument daterat 1677 i Egerton Manuscripts, hänvisade till dess styrka. Namnet porter användes första gången 1721 för att beskriva ett mörkbrunt öl. På grund av den enorma populariteten av bärare, bryggerier gjorde dem i en mängd olika styrkor. </p>
+				<a href="stout.html">Läs Mer</a>
+			  </div>
+			</div>
+			<!-- Bilder på ölen som kan läsas om på sidan -->
+			<div class="bannerImg" id="slideshow">
+			  <img src="lager.png" class="active">
+			  <img src="ipa.png">
+			  <img src="stout.png">
+			</div>
+		</div>
+		<!-- Pilar som används för att navigera mellan texterna på sidan samt bilder -->
+		<div class="icons">
+			<ul class="controls">
+				<li><a class="fa fa-arrow-left" onClick="prevSlide();prevSlideText();"></a></li>
+				<li><a class="fa fa-arrow-right" onClick="nextSlide();nextSlideText();"></a></li>
+			</ul>
+		</div>
+	</div>	
+	<!-- Javascript filen som används -->
+	<script src="hem.js"></script>
+</body>
+</html>
